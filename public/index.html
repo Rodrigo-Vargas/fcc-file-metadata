@@ -11,34 +11,30 @@
    <body>
       <div class="container">
          <div class="page-header">
-            <h1>File Metadata Microservice</h1>
+            <a href="/"><h1>File Metadata Microservice</h1></a>
          </div>
 
          <blockquote>
             <h2>User stories:</h2>
             <ul>
-               <li>User Story: I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
-               <li>User Story: I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
-               <li>User Story: I can get a list of the most recently submitted search strings.</li>
+               <li>User Story: I can submit a FormData object that includes a file upload.</li>
+               <li>User Story: When I submit something, I will receive the file size in bytes within the JSON response</li>
             </ul>
          </blockquote>
 
          <div>
-            <h2>Examples of search:</h2>
-            <a href="http://rvg-image-search.herokuapp.com/search/dogs">
-               http://rvg-image-search.herokuapp.com/search/dogs
-            </a>
+            <h2>Instructions:</h2>
+            <p>First, acesses the link below to see the upload form</p>
+            <a href="/upload">http://rvg-file-metadata.herokuapp.com/upload</a>
+            
+            <p>Select the desired file and click in send file</p>
 
             <div>
-               <span>This is will search for results that relative to 'dogs'</span>
+              <span>The response will be the follow format, showing the file size:</span>
+              <div>
+                <code>{"file_size":1012}</code>
+              </div>
             </div>            
-         </div>
-
-         <div>
-            <h2>Retrieve last queries</h2>
-            <a href="http://rvg-image-search.herokuapp.com/latest/searchs">
-               http://rvg-image-search.herokuapp.com/latest/searchs
-            </a>
          </div>
       </div>      
    </body>

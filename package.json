@@ -1,32 +1,29 @@
 {
-  "name": "clementinejs",
-  "version": "1.0.2",
-  "description": "A light-weight MEAN stack boilerplate.",
+  "name": "rvg-file-metadata",
+  "version": "1.0.0",
+  "description": "A file size microservice",
   "main": "server.js",
-  "scripts": {
-    "start": "gulp"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnstonbl01/clementinejs"
+    "url": "git+https://github.com/Rodrigo-Vargas/fcc-file-metadata"
   },
-  "homepage": "http://johnstonbl01.github.io/clementinejs/",
-  "bugs": "https://github.com/johnstonbl01/clementinejs/issues",
+  "homepage": "http://rodrigovg.com.br",
+  "bugs": "https://github.com/Rodrigo-Vargas/fcc-file-metadata/issues",
   "keywords": [
     "MEAN",
-    "MongoDB",
     "Express",
     "Angular",
     "Node",
     "javascript",
-    "boilerplate"
+    "file",
+    "size",
+    "metadata",
+    "microservice"
   ],
-  "author": "Blake Johnston",
+  "author": "Rodrigo Vargas",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.14.2",
     "express": "^4.13.3",
-    "mongodb": "^2.0.42",
     "multer": "^1.1.0"
   }
 }

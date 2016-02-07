@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function (app, db) {
+module.exports = function (app) {
   var multer = require('multer');
   var upload = multer({ dest: '/tmp/'});
 
@@ -10,7 +10,7 @@ module.exports = function (app, db) {
   });
 
   app.get('/upload', function(req, res) {
-    res.sendFile(process.cwd() + "/" + "index.html" );
+    res.sendFile(process.cwd() + "/public/form.html" );
   });
 
   app.post('/file_upload', upload.single('file'), function (req, res, next) {
